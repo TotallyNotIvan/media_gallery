@@ -1,0 +1,106 @@
+svg {
+    position: absolute;
+    max-width: 3.5rem;
+    top: -3rem;
+}
+.left{
+  transform: translate(-4.5rem)
+}
+.right{
+  transform: translate(4.5rem)
+}
+.card {
+    border: .15rem solid #353434;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 31.5rem;
+    padding: 1.4rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    background-color: #D8D8D8;
+    box-sizing: unset;
+  }
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D8D8D8;
+    z-index:1;
+    font-family: "Arial Black";
+  } 
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 28.5rem;
+    background: #353434;
+    z-index: 1;
+    transition: all .7s ease-out;
+  }
+.card:hover::before {
+    height: 88%;
+    z-index: 0;
+  }
+.cart {
+    font-weight: 600;
+    background: #353434;
+    border-radius: 1rem;
+    border: .3rem solid #D8D8D8;
+    padding: .5rem; 
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 3rem;
+    font-family: "Arial";
+  }
+.price{
+  font-size: 3.2rem;
+  font-family: Impact;
+  padding:0;
+  color: #4F4E4A;
+  align-self: flex-start;
+  margin: 0;
+  padding-left: 1rem;
+
+}
+img{
+  padding: 0;
+  width: 33rem;
+  z-index: -1;
+}
+.name{
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+p{
+  margin: 0;
+}
+.ammo, .weight{
+  position: absolute;
+  font-family: Arial;
+  top: 36.5rem;
+}
+.ammo{
+  left: 5rem;
+}
+.weight{
+  left: 21.5rem;
+}
+.botspace{
+  padding-bottom: 11rem;
+}
+.ammoi{
+  transform: translate(-7rem,14rem)scale(.8)rotate(90deg);
+}
+.weighti{
+  transform: translate(7rem,14rem);
+}
+/* should make it on lcik instead of hover for phone users. */
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
