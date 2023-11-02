@@ -70,6 +70,17 @@ img{
   width: 33rem;
   z-index: -1;
 }
+.dwx{
+  width:17rem;
+}
+.shotgun{
+  margin-top: 2rem;
+  margin-bottom: 4.7rem;
+}
+.scar{
+  width:31rem;
+  margin-bottom: .25rem;
+}
 .name{
   margin-top: 5rem;
   font-size: 3rem;
@@ -100,20 +111,33 @@ p{
 /* should make it on lcik instead of hover for phone users. */
 body{
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #404040;
 }
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background-color: #4F4E4A;
   padding: 1rem;
   gap: 1.5rem 1.5rem;
+  padding-bottom: 10rem;
 }
 /* @media screen and (max-width: 768px) {
   .grid-container {}
 } */
-.mainface {
-  grid-template-columns: repeat(auto-fit, minmax(240px, 4fr));
+.mainface > img{
+  min-width: max-content;
+}
+.blue{
+  color: rgb(214, 179, 82);
+}
+.head{
+  font-size: 3.2rem;
+  color: rgb(178, 175, 167);
+}
+.space{
+  margin-left: 1.5rem;
+}
+.textwhite{
+  color: rgb(178, 175, 167);
 }
