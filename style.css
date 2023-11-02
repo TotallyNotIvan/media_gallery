@@ -104,3 +104,16 @@ body{
   justify-content: center;
   align-items: center;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #4F4E4A;
+  padding: 1rem;
+  gap: 1.5rem 1.5rem;
+}
+/* @media screen and (max-width: 768px) {
+  .grid-container {}
+} */
+.mainface {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 4fr));
+}
