@@ -137,6 +137,8 @@ body{
 .head{
   font-size: 3.2rem;
   color: rgb(178, 175, 167);
+  position: absolute;
+  font-weight: 600;
 }
 .space{
   margin-left: 1.5rem;
