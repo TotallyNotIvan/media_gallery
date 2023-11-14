@@ -3,12 +3,6 @@ svg {
     max-width: 3.5rem;
     top: -3rem;
 }
-.left{
-  transform: translate(-4.5rem)
-}
-.right{
-  transform: translate(4.5rem)
-}
 .card {
     border: .15rem solid #353434;
     position: relative;
@@ -40,10 +34,10 @@ svg {
     z-index: 1;
     transition: all .7s ease-out;
   }
-.card:hover::before {
+/* .card:hover::before {
     height: 88%;
     z-index: 0;
-  }
+  } */
 .cart {
     font-weight: 600;
     background: #353434;
@@ -54,7 +48,12 @@ svg {
     padding-right: 3rem;
     font-size: 3rem;
     font-family: "Arial";
+    cursor: pointer;
   }
+.cart:hover {
+  color: rgb(214, 179, 82);
+  border-color: rgb(214, 179, 82);
+}
 .price{
   font-size: 3.2rem;
   font-family: Impact;
@@ -131,12 +130,16 @@ body{
 
   width: 100%;
 }
+.mainface {
+  position: relative;
+}
 .blue{
   color: rgb(214, 179, 82);
 }
 .head{
+  z-index: 100;
   font-size: 3.2rem;
-  color: rgb(178, 175, 167);
+  color: rgb(186, 185, 182);
   position: absolute;
   font-weight: 600;
 }
@@ -148,6 +151,8 @@ body{
 }
 .textyeller{
   color: rgb(214, 179, 82);
+  /* cursor: pointer; */
+   /* did not work */
 }
 @media screen and (max-width: 1420px){
   .grid-container {
@@ -163,4 +168,44 @@ body{
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.left{
+  transform: translate(-2.5rem)
+}
+.right{
+  transform: translate(2.5rem)
+}
+.left1{
+  transform: translate(-5rem)
+}
+.right1{
+  transform: translate(5rem)
+}
+.tabIcons > svg{
+  width: 15px;
+  height: 15px;
+}
+.tabIcons {
+  z-index: 100;
+  position: absolute;
+  right: 50%;
+  bottom: 5%;
+  cursor: pointer;
+}
+.tabIcons:hoover {
+  color: rgb(214, 179, 82);
+}
+.prev, .next {
+  z-index: 1000;
+  position: absolute; /*-- positions arrows absolutely--*/
+  padding: 16px; /*-- adds a little bit of space--*/
+  margin-top: 16%; /*-- adjusts position by height of arrows --*/
+  color: white; /*-- sets color for contrast --*/
+  font-weight: bold; /*-- selects heavier font --*/
+  font-size: 3vmax; /*-- sets arrow font size --*/
+  /* cursor: pointer; */
+  /* did not work */
+}
+.next{
+  right: 0;
 }
